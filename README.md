@@ -31,19 +31,19 @@ The objective of this project is to predict whether a customer will leave the ba
 
 ## Data Description
 1. CreditScore(`int`) — Customer credit score
-2. Geography(`object`) — Customer location
-3. Gender(`object`) — Gender of the customer
-4. Age(`int`) — Customer age
-5. Tenure(`int`) — Duration of the customer relationship with the bank
-6. Balance(`float`) — Account balance
-7. NumOfProducts(`int`) — number of products that a customer has purchased through the bank.
-8. HasCrCard(`int`) — denotes whether or not a customer has a credit card
-9. IsActiveMember(`int`) — Indicator of active membership status
-10. EstimatedSalary(`float`) — Customer Salary
-11. Complain(`int`) — Indicator of customer complaints
-12. Satisfaction Score(`int`) — Score provided by the customer for their complaint resolution
+2. Age(`int`) — Customer age
+3. Tenure(`int`) — Duration of the customer relationship with the bank
+4. NumOfProducts(`int`) — number of products that a customer has purchased through the bank.
+5. HasCrCard(`int`) — denotes whether or not a customer has a credit card
+6. IsActiveMember(`int`) — Indicator of active membership status
+7. Complain(`int`) — Indicator of customer complaints
+8. Satisfaction Score(`int`) — Score provided by the customer for their complaint resolution
+9. Points Earned(`int`) — Points earned by the customer through credit card usage
+10. Balance(`float`) — Account balance
+11. EstimatedSalary(`float`) — Customer Salary
+12. Geography(`object`) — Customer location
 13. Card Type(`object`) — Type of card hold by the customer.
-14. Points Earned(`int`) — Points earned by the customer through credit card usage
+14. Gender(`object`) — Gender of the customer
 15. **Exited**(`int`) — **Target feature** that indicate whether the customer left the bank
 
 - Target Variable
