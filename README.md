@@ -5,15 +5,18 @@ Member: Beomseong Kim, Ikjoo Oh
 
 ## Table of Contents
 1. [Overview](#overview)
-2. [Problem Statement](#Problem-Statement)
-3. [Data Description](#Data-Description)
-4. [Data Preprocessing](#Data-Preprocessing)
-5. [Exploratory Data Analysis](#Exploratory-Data-Analysis)
-6. [Feature Engineering](#Feature-Engineering)
-7. [Model Selection](#Model-Selection)   
-8. [Model Training and Evaluation](#Model-Training-and-Evaluation)
-9. [Hyperparameter Tuning](#Hyperparameter-Tuning)
-10. [Conclusion](#Conclusion)
+2. [Problem Statement](#problem-statement)
+3. [Data Description](#data-description)
+4. [Data Preprocessing](#data-preprocessing)
+5. [Exploratory Data Analysis](#exploratory-data-analysis)
+6. [Reinforcement Learning Environment Setup](#reinforcement-learning-environment-setup)
+7. [Feature Engineering](#feature-engineering)
+8. [Model Selection](#model-selection)
+9. [Model Training and Evaluation](#model-training-and-evaluation)
+10. [Hyperparameter Tuning](#hyperparameter-tuning)
+11. [Performance Analysis](#performance-analysis)
+12. [Deployment](#deployment)
+13. [Conclusion](#conclusion)
 
 ## Overview
 
@@ -64,13 +67,19 @@ The objective of this project is to utilize reinforcement learning to develop a 
 
 ## Exploratory Data Analysis
 
-## Feature Engineering
+## Reinforcement Learning Environment Setup
+
+## Feature Engineering (later)
 
 ## Model Selection
 
 ## Model Training and Evaluation
 
 ## Hyperparameter Tuning
+
+## Performance Analysis 
+
+## Deployment 
 
 ## Conclusion
 
