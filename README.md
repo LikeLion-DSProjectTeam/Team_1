@@ -37,15 +37,14 @@ The objective of this project is to utilize reinforcement learning to develop a 
 4. NumOfProducts(`int`) — number of products that a customer has purchased through the bank.
 5. HasCrCard(`int`) — denotes whether or not a customer has a credit card
 6. IsActiveMember(`int`) — Indicator of active membership status
-7. Complain(`int`) — Indicator of customer complaints
-8. Satisfaction Score(`int`) — Score provided by the customer for their complaint resolution
-9. Points Earned(`int`) — Points earned by the customer through credit card usage
-10. Balance(`float`) — Account balance
-11. EstimatedSalary(`float`) — Customer Salary
-12. Geography(`object`) — Customer location
-13. Card Type(`object`) — Type of card hold by the customer.
-14. Gender(`object`) — Gender of the customer
-15. **Exited**(`int`) — **Target feature** that indicate whether the customer left the bank
+7. Satisfaction Score(`int`) — Score provided by the customer for their complaint resolution
+8. Points Earned(`int`) — Points earned by the customer through credit card usage
+9. Balance(`float`) — Account balance
+10. EstimatedSalary(`float`) — Customer Salary
+11. Geography(`object`) — Customer location
+12. Card Type(`object`) — Type of card hold by the customer.
+13. Gender(`object`) — Gender of the customer
+14. **Exited**(`int`) — **Target feature** that indicate whether the customer left the bank
 
 - Target Variable
   - Exited: `1` = the customer left, `0` = the customer stayed
@@ -54,6 +53,7 @@ The objective of this project is to utilize reinforcement learning to develop a 
 1. RowNumber - indicates the row number and this feature doesn't affect analysis
 2. CustomerId - A random identifier for customers, which also doesn't influence customer churn
 3. Surname - The customer's surname has no impact on their decision to leave the bank
+4. Complain - This feature has perfect correlation of 1 with `Exited', which could lead to overfitting
 
 ## Data Preprocessing
 - There were no missing values across all features.
