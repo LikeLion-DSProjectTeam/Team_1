@@ -63,17 +63,12 @@ The objective of this project is to utilize reinforcement learning to develop a 
 - Robust Scaling: Implemented for `Point Earned` and `Balance` to mitigate the influence of outliers by using the median and interquartile range.
 
 ## Exploratory Data Analysis
-- Data Visualization: Use plots such as histograms, bar plots, and box plots to explore relationships between variables. 
-- Correlation Analysis: We will identify correlations between features and customer churn to select the most relevant predictors. Use `sns.heatmap`
 
 ## Feature Engineering
 
 ## Model Selection
-1. Baseline Model: Logistic Regression
-    - Logistic Regrssion is fundamemntal binary classification algorithm.
 
 ## Model Training and Evaluation
-- With the 10,000 instances of dataset, we will split the dataset into 70% training, 15% validation, and 15% test sets. 
 
 ## Hyperparameter Tuning
 
