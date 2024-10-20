@@ -22,12 +22,10 @@ This is a Data Science project by Beomseong Kim and Ikjoo Oh under the guidance 
 Used Kaggle Dataset: [Bank Chustomer Churn](https://www.kaggle.com/datasets/radheshyamkollipara/bank-customer-churn/data)
 
 ## Problem Statement
-The objective of this project is to predict whether a customer will leave the bank based on historical data. Understanding the predictors of customer churn can help the bank in designing effective retention programs and improving customer satisfaction.
+The objective of this project is to utilize reinforcement learning to develop a predictive model that identifies optimal strategies for retaining customers who are at risk of leaving the bank. By leveraging historical data and understanding the factors influencing customer churn, the bank can implement targeted retention programs and enhance overall customer satisfaction.
 
 - Expected Outcomes
-  - We expect to identify key factors contributing to customer churn
-  - We will develop a predictive model that accurately classifies customers at risk of churning
-  - We will enhance skills in data analysis, machine learning, and problem-solving within a bank industry context
+  - We will develop a reinforcement learning model that learns optimal actions to take in order to reduce customer churn rates effectively.
 
 ## Data Description
 1. CreditScore(`int`) — Customer credit score
@@ -55,9 +53,14 @@ The objective of this project is to predict whether a customer will leave the ba
 3. Surname - The customer's surname has no impact on their decision to leave the bank
 
 ## Data Preprocessing
-- Remove irrelevant features: `RowNumber`, `CustomerId`, `Surname`
-- Handle missing values: all columns are free with missing values
-- Feature Encoding: We need to convert features like `Geography`, `Gender`, `NumberOfProducts`, `HasCrCard`, `Tenure`, `IsActiveMember` using one-hot encoding or label encoding.
+- There were no missing values across all features.
+- We dropped irrelevant features `RowNumber`, `CustomerId`, `Surname`
+- We also dropped the `Complain` feature due to its perfect correlation of 1 with the target variable Exited. Because this redundancy could potentially lead to overfitting
+- We converted categorical features like `Geography`, `Gender`, `Card Type`, `NumOfProducts`, and `Satisfaction Score` into one-hot encoded variables to create binary columns representing each category. And we `drop_first = True` because it helps to avoid multicollinearity in our model by dropping one of the binary columns.
+- We created the `Zero_Balance` feature by checking if a customer's balance is equal to zero based on the `Balance` feature. Because a significant number of customers had a balance of zero in `Balance` feature. And this binary variable would be crucial in understanding customer behavior.
+- Standard Scaling: Applied to `CreditScore` and `Age` to normalize these features around a mean of 0 and standard deviation of 1.
+- Min-Max Scaling: Used for `EstimatedSalary` to scale values to a range of 0 and 1.
+- Robust Scaling: Implemented for `Point Earned` and `Balance` to mitigate the influence of outliers by using the median and interquartile range.
 
 ## Exploratory Data Analysis
 - Data Visualization: Use plots such as histograms, bar plots, and box plots to explore relationships between variables. 
