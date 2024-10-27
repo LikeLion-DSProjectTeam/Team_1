@@ -25,10 +25,13 @@ This is a Data Science project by Beomseong Kim and Ikjoo Oh under the guidance 
 Used Kaggle Dataset: [Bank Chustomer Churn](https://www.kaggle.com/datasets/radheshyamkollipara/bank-customer-churn/data)
 
 ## Problem Statement
-The objective of this project is to utilize reinforcement learning to develop a predictive model that identifies optimal strategies for retaining customers who are at risk of leaving the bank. By leveraging historical data and understanding the factors influencing customer churn, the bank can implement targeted retention programs and enhance overall customer satisfaction.
+The objective of this project is to leverage reinforcement learning to develop an intelligent decision-making model that identifies and implements optimal strategies for retaining customers at risk of churning. By analyzing historical customer data and understanding the key factors influencing churn, the model will learn to take targeted actions such as offering promotions, personalized financial products, or enhanced customer service that would effectively reduce churn rates. Additionally, the project includes the design and implementation of a interface that allows user (most likely bank staff) to interact with the model, visualize predictions, and deploy retention strategies efficiently. This integrated approach aims to enable the bank to deploy dynamic and adaptive retention programs, thereby increasing customer satisfaction, loyalty, and operational efficiency.
 
 - Expected Outcomes
-  - We will develop a reinforcement learning model that learns optimal actions to take in order to reduce customer churn rates effectively.
+  - Development of a Reinforcement Learning Model: We will create a reinforcement learning-based agent capable of learning and executing optimal actions to retain at-risk customers.
+  - User-Friendly Interface Implementation: We will design and develop an intuitive and interactive user interface that allows bank staff to easily interact with the reinforcement learning model, visualize customer churn predictions, and deploy retention strategies with minimal effort.
+  - Performance Benchmarking: We will compare the reinforcement learning model’s performance against machine learning baseline models (ex, Logistic, Linear) to demonstrate its effectiveness and superiority in churn prevention.
+
 
 ## Data Description
 1. CreditScore(`int`) — Customer credit score
