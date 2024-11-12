@@ -1,10 +1,10 @@
 import streamlit as st
 import pandas as pd
 import joblib
-from stable_baselines3 import DQN
+
 
 # model = joblib.load("churn_prediction_model.pkl")
-# agent = DQN.load("dqn_churn_agent_model")
+# agent = joblib.load("q_learning_agent_model.pkl")
 
 st.title("Bank Customer Churn Prediction & Action Recommendation")
 
@@ -45,8 +45,9 @@ if st.button("Predict Churn Probability & Recommend Action"):
     churn_probability = model.predict_proba(input_data)[0][1]
     st.write(f"Predicted Churn Probability: {churn_probability:.2%}")
 
-
-    obs = input_data.values
-    action, _ = agent.predict(obs)
-    action_text = agent.get_env().actions[action]
-    st.write(f"Recommended Action: {action_text}")
+    state = tuple(input_data.iloc[0].values)
+    if state in agent:
+        action = max(agent[state], key = agent[state].get)
+        st.write(f"Recommended Action: {action}")
+    else:
+        st.write(f"No recommended actsion for this state.")
