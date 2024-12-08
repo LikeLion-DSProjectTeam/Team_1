@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import joblib
 
-model = joblib.load("xgboost_churn_model.pkl")
+model = joblib.load("./xgboost_churn_model.pkl")
 
 st.markdown("""
 <style>
