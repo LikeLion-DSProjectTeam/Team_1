@@ -6,7 +6,6 @@ import os
 model_path = os.path.join(os.path.dirname(__file__), "xgboost_churn_model.pkl")
 model = joblib.load(model_path)
 
-
 st.markdown("""
 <style>
 body {
